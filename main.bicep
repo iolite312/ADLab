@@ -35,6 +35,10 @@ var computers = {
     name: 'SR05'
     ip: '10.10.10.15'
   }
+  MB1: {
+    name: 'SR06'
+    ip: '10.10.10.16'
+  }
 }
 var vmSize = 'Standard_D2as_v5'
 var vnetPrefixes= ['10.10.0.0/16']
