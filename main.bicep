@@ -35,10 +35,6 @@ var computers = {
     name: 'SR05'
     ip: '10.10.10.15'
   }
-  MB1: {
-    name: 'SR06'
-    ip: '10.10.10.16'
-  }
 }
 var vmSize = 'Standard_D2as_v5'
 var vnetPrefixes= ['10.10.0.0/16']
@@ -598,7 +594,7 @@ resource AddDCChildDomain 'Microsoft.Compute/virtualMachines/extensions@2022-08-
     }
   }
 }
-
+/*
 module MemberServer1 'br/public:avm/res/compute/virtual-machine:0.21.0' = {
   name: '${computers.MB1.name}-deployment'
   dependsOn: [AddDCChildDomain]
@@ -671,6 +667,6 @@ resource joinDomain 'Microsoft.Compute/virtualMachines/extensions@2022-11-01' = 
     }
   }
 }
-
+*/
 output adminusername string = adminUsername
 output adminpassword string = adminPassword
